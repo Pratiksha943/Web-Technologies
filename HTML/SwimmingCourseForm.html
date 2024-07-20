@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming Course Form</title>
+</head>
+<body>
+    <center>
+    <form style="background-color: rgb(208, 250, 248);" >
+        <center><h3>Swimming Classes </h3></center>
+        <section class="form-container">
+        <fieldset id="main-feild">
+            <legend><b>Register to Swimming Course</b></legend>
+            <fieldset>
+                <br>
+                <div id="name-container">
+                    <input type="text" placeholder="Enter your full name" size="50" required><br><br>
+                    <input type="text" placeholder="Enter your father's name" size="50" required><br><br>
+                </div>
+            
+            </fieldset>
+            <!--second part-->
+            <fieldset>
+                <br>
+                <div id="blood-group">
+                    <label><b>Blood Group : </b></label>
+                    <select>
+                        <option>Select an option</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label><b>DOB : </b> </label>
+                    <input type="date">
+                    <br>
+                    <br>
+
+                </div>
+            </fieldset>
+
+            <fieldset id="body-measurements">
+                <br>
+                <input type="number" placeholder="enter your height">
+                <input type="number" placeholder="enter your weight">
+                <label><b>Age :</b> </label>
+                <input type="number" max="60">
+                <br>
+                <br>
+                <label><b>Any physical irregularities?</b></label>
+                <input type="radio" name="physical-disability">
+                <label><b>Yes</b></label>
+                <input type="radio" name="physical-disability">
+                <label><b>No</b></label>
+                <br>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Submit" style="height: 30px; width: 80px">
+            </fieldset>
+        </fieldset>
+    </form>  
+    </section>
+</center>
+</body>
+</html>

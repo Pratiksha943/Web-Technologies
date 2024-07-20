@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+    <style>
+        #outer-Circle
+        {
+            margin: auto;
+            margin-top: 150px;
+            height: 500px;
+            width: 500px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+        }
+        .eye-container
+        {
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            top: 100px;
+            display: flex;
+            left: 200px;
+        }
+        .eyes
+        {
+            height: 100%;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+        }
+        .left
+        {
+            left: 100px;
+        }
+        .right
+        {
+            right: 100px;
+        }
+        .eyeball
+        {
+            height: 50%;
+            width: 60px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            transform: translate(-50%,-50%);
+            animation: rolltheeyes 2s ease-in-out infinite;
+        }
+        
+        .mouth{
+            width: 30%;
+            height: 5px;
+            border: 1px solid;
+            position: absolute;
+            bottom: 100px;
+            left: 170px;
+            background-color: black;
+           animation-iteration-count: infinite;
+           animation-timing-function: linear;
+           animation: mouth 2s ease-in-out infinite;
+        }
+        @keyframes rolltheeyes
+        {
+            /* 10%{
+               transform: translate(-14px,50%);
+               @keyframes eyeroll { */
+            30%,40%,50%{
+                transform: translate(0px,-75px);
+            }
+        }
+            15%
+            {
+               transform: translate(-14px,-10px);
+            }
+            20%,100%{
+                transform: translate(-50%,-15px);
+            }
+          }
+          @keyframes mouth {
+            30%,40%,50%{
+                transform: scale(1.1);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                left: 40%;
+            }
+            60%,70%,80%{
+                background-color: white;
+                transform: scale(1.4);
+            }
+          }
+       
+    </style>
+</head>
+<body>
+    <div id="outer-Circle">
+        <div class="eye-container">
+            <div class="eyes left">
+                <div class="eyeball"></div>
+            </div>
+            <div class="eyes right">
+                <div class="eyeball"></div>
+            </div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .form-container{
+            height: 600px; 
+            width: 500px;     
+            margin: auto;
+            background-color: rgb(196, 252, 191);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container #main-feild{
+            height: 600px;
+            width: 430px;
+        }
+
+        #name-feild{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .name-holder{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .credentials{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid black;
+        }
+
+        .credentials .cred-holder {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .credentials .cred-holder input{
+            width: 100%;
+        }
+
+        .identity #gender{
+            display: flex;
+            gap : 30px;
+        }
+        
+        #gender-input{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #submit{
+            height: 30px;
+            margin: 20px;
+            display: flex;
+            gap: 30px;
+            background-color: rgb(65, 231, 65);
+        }
+    </style>
+</head>
+<body>
+    <section class="form-container">
+        <form action="">
+            <fieldset id="main-feild">
+                <legend><h2>Student Admission Details</h2> </legend>
+                <!--First Part-->
+                <div class="name-container">
+                    <fieldset id="name-feild">
+                        <legend>Name</legend>
+                        <div class="name-holder">
+                            <label for="first-name">First Name </label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div class="name-holder">
+                            <label for="last-name">Last Name </label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!--Second Part-->
+                <div class="credentials">
+                    <div class="cred-holder">
+                        <input type="text" id="username" placeholder="enter enrollment number" required>
+                    </div>
+                    <div class="cred-holder">
+                        <input type="email" placeholder="enter email" required>
+                    </div>
+                    <div class="cred-holder">
+                        <input type="tel"  placeholder="enter contact number" maxlength="10" required>
+                    </div>
+                    <div class="cred-holder">
+                        <input type="password"  placeholder="enter password" minlength="8" required>
+                    </div>
+                </div>
+                 <!--Second Part Ended-->
+
+                <!--Third Part-->
+                <div class="identity">
+                    <div id="gender">
+                        <div>
+                            <label for ="gender"> <h4>Gender : </h4></label>
+                        </div>
+                        <div id="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male"> Male</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <div id="dob">
+                        <label for ="dob"><b>Date Of Birth : </b></label>
+                        <input type="date" >
+                    </div>
+                    <br>
+                    <div>
+                        <div id="course-details">
+                            <label for="yop"><b>Course Details : </b></label>
+                            <select>
+                                <option>Select</option>
+                                <option>BE</option>
+                                <option>BTech</option>
+                                <option>BSC</option>
+                                <option>BCA</option>
+                                <option>ME</option>
+                                <option>MTech</option>
+                                <option>MSC</option>
+                                <option>MCA</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <div id="branch-details">
+                            </label for="branch-details"><b>Branch Details : </b>
+                            <select>
+                                <option>Select</option>
+                                <option>Computer </option>
+                                <option>E&TC</option>
+                                <option>Mech</option>
+                                <option>Civil</option>
+                                <option>Electrical</option>
+                            </select>
+                            </div>
+                            <br>
+                        <div id="yop">
+                            <label for="yop"><b>Year Of Passout : </b></label>
+                            <select>
+                                <option>Select </option>
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+         
+                    </div>
+                    <!--Third Part Ended-->
+                    <br>
+                </div>
+                <label><b>10th % : <b></label>
+                <input type="number" max="100" min="35"><br>
+                 <label><b>12th %: <b></label>
+                <input type="number" max="100" min="35"><br>
+                <label><b>Percentage / CGPA : <b></label>
+                <input type="number" max="100" min="35"><br>
+                <!--Fourth Part -->
+                <div class="submit">
+                    <center>
+                        <input type="submit" id="submit" value="Submit" href="">
+                    </center>
+                </div>
+               
+                <!--Fourth Part Ended-->
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

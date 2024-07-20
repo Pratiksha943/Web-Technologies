@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <center>
+    <h1>HTML Form</h1>
+    <form>
+        <!-- feildset is used to put outline/border to a form -->
+        <fieldset>
+            <legend>Login Form </legend>
+            <label for="username">User name</label>
+            <input type="text" id="username">
+            <br><br>
+            <label for="pw">Password</label>
+            <input type="password" id="pw">
+            <br><br>
+            <textarea rows="5" column="50" maxlength="20"></textarea>
+            <br><br>
+
+           <!-- 1st way to create button
+            <input type="submit" value="Login">
+            -->
+            <button>Login</button>
+        </fieldset>        
+    </form>
+    <p></p>
+
+    <form>
+        <fieldset>
+            <input type="text" placeholder="Enter User name "><br><br>
+            <input type="number" placeholder="Enter number"><br><br>
+            <input type="tel" placeholder="Enter Phone Number" maxlength="10"><br><br>
+            <input type="email" placeholder="Enter email id"><br><br>
+            <input type="password" placeholder="Enter password"><br><br>
+
+            Gender<br>
+            <!--in input type radio NAME is used to specify we want "ONLY ONE" option
+            at that time we should use SAME NAME for the attribute-->
+            <input type="radio" id="male" name="gender">
+            <label for="male"> Male</label><br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label><br><br>
+
+            Techonologies<br>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" if="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="js">
+            <label for="js">Javascript</label><br>
+
+            <input type="date"><br>
+            Search :<input type="search" placeholder="search items..."><br>
+            File : <input type="file"><br>
+            Image : <input type="image"><br>
+            Color : <input type="color"><br>
+            Range : <input type="range"><br>
+            <select>
+                <option>delhi</option>
+                <option>mumbai</option>
+                <option>pune</option>
+                <option>banglore</option>
+                <option>hyderabad</option>
+            </select>
+            <input type="url">
+            <p>The input type="url" is used for input fields that should contain a URL address:</p>
+            <input type="url" id="homepage" name="homepage">
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <p><strong>Note:</strong> The hidden field is not shown to the user, but the data is sent when the form is submitted.</p>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <label for="homepage">Add your homepage:</label>
+            
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
