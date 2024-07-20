@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        button{
+            height: 30px;
+            width: 90px;
+            background-color: orangered;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        button:hover{
+            /* background-color: white;
+            border: 1px solid orangered;
+            color: orangered; */
+            background-color: orange;
+        }
+        a{
+            height: 60px;
+            width: 100px;
+            border: 2px solid;
+            font-weight: 600;
+        }
+        a:link{
+            color: black;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: cornflowerblue;
+        }
+        input{
+            background-color: beige;
+            outline: none;
+            border: none;
+        }
+        input:required{
+            border: 1px solid;
+        }
+        div h1:first-child{
+            color: red;
+        }
+        div h1:last-child{
+            color: green;
+        }
+        div h1:nth-child(3){
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <h1>good morning</h1>
+        <button>Click</button><br><br>
+
+        <a href="#">Login</a> -->
+        <!-- <a href="?">Home</a><br><br>
+
+         <input type="text" required><br><br>
+         <input type="text">
+    </div> -->
+    <div>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+        <h1>hi</h1>
+    </div>
+</body>
+</html>

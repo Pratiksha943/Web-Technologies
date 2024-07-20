@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo Class Selector</title>
+    <style>
+        .container::before
+        {
+            content: '';
+            display: flex;
+            background: url('https://media.istockphoto.com/id/1146063863/photo/architectural-apartment-building-complex.jpg?s=612x612&w=0&k=20&c=WSKX0XgDI7u6urUUdtfDMX5J3mniLrHNSIdBwrdAVqA=');
+        }
+
+        h1{
+            padding: 20px;
+            /*border: 2px dotted red;*/
+            margin-left: 100px;
+            margin-top: 200px;
+            margin-right: 20px;
+            margin-bottom: 200px;
+            margin : 100px 200px 250px 50px;
+            border-width: 10px;
+            border-color: blue;
+            border-style: dashed;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="container">Good morning</h1>
+</body>
+</html>
